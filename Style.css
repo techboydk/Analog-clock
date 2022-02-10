@@ -1,211 +1,273 @@
-*{
-  margin: auto;
-}
-body{
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background: #09f;
-  width: 100%;
-}
-.main{
-  margin-top: 250px;
-  height: 320px;
-  width: 300px;
-  position: relative;
-  box-sizing: border-box;
-  animation: fade 5s linear;
-  box-shadow: 0 0 10px 5px #f5f5;
-  z-index: -10;
+* {
+    margin: auto;
 }
 
-@keyframes fade {
-  0%{
-    z-index: 10;
-    opacity: 0;
-  }
-  100%{
+body {
+    margin: 0;
+    padding: 0;
+    background: #00000087;
+    width: 100%;
+}
+
+.main {
+    margin-top: 400px;
+    margin-bottom: 200px;
+    height: 550px;
+    width: 530px;
+    position: relative;
+    box-sizing: border-box;
+    animation: fade 5s linear;
+    box-shadow: 0 0 10px 5px #00ffe1e6;
+    background: #ff650075;
     z-index: -10;
-    box-shadow: 0 0 10px 5px #f5f2;
-    opacity: 1;
-  }
+    animation: color 10s linear infinite;
 }
 
-.main .inner-width{
-  border: 2px solid;
-  width: 200px;
-  height: 200px;
-  background-color: #fff;
-  box-shadow: inset 0 0 20px 10px #0ff, 0px 1px 10px 2px #000;
-  border-radius: 104px;
-  position: absolute;
-  margin: 50px;
+@keyframes color {
+    0% {
+        background: #fd00da;
+    }
+    25% {
+        background: #1665aa;
+    }
+    50% {
+        background: #00ff18;
+    }
+    75% {
+        background: #f7ff00;
+    }
+    100% {
+        background: #ff00c4;
+    }
 }
 
-.main .left-cap{
-  position: absolute;
-  height: 30px;
-  width: 50px;
-  border: 2px solid;
-  border-radius: 60px 60px 0 0;
-  z-index: -1;
-  margin: 20px 195px;
-  transform: rotate(30deg);
-  background-color: #caccce;
-  box-shadow: 0 0 10px 1px #000, inset 0 0 10px 5px #fff;
+.main .inner-width {
+    border: 2px solid;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: inset 0 0 20px 10px #1c1c1cab, 0px 1px 10px 2px #ff0000e6;
+    border-radius: 150px;
+    position: absolute;
+    margin: 115px;
 }
 
-.main .left-hand{
-  position: absolute;
-  height: 50px;
-  width: 15px;
-  border: 2px solid;
-  border-radius: 5px;
-  z-index: -2;
-  margin: 25px 203px;
-  transform: rotate(30deg);
-  background-color: #caccce;
-  box-shadow: 0 0 10px 1px #000;
-  
+.main .left-cap {
+    position: absolute;
+    height: 39px;
+    width: 102px;
+    border: 1px solid;
+    border-radius: 60px 60px 0 0;
+    z-index: -1;
+    margin: 75px 322px;
+    transform: rotate(30deg);
+    background-color: #caccce;
+    box-shadow: 0 0 10px 1px #ff0000, inset 0 0 10px 5px #fff;
 }
 
-.main .right-hand{
-  position: absolute;
-  height: 50px;
-  width: 15px;
-  border: 2px solid;
-  border-radius: 5px;
-  z-index: -2;
-  margin: 25px 75px;
-  transform: rotate(-30deg);
-  background-color: #caccce;
-  box-shadow: 0 0 10px 1px #000;
+.main .left-hand {
+    position: absolute;
+    height: 66px;
+    width: 27px;
+    border: 1px solid;
+    border-radius: 5px;
+    z-index: -2;
+    margin: 97px 338px;
+    transform: rotate(30deg);
+    background-color: #caccce;
+    box-shadow: 0 0 10px 1px #f00;
 }
 
-.main .right-cap{
-  position: absolute;
-  height: 30px;
-  width: 50px;
-  border: 2px solid;
-  border-radius: 60px 60px 0 0;
-  z-index: -1;
-  margin: 22px 50px;
-  transform: rotate(-30deg);
-  background-color: #caccce;
-  box-shadow: 0 0 10px 1px #000,inset 0 0 10px 5px #fff;
-}
-.main .stand-left{
-  position: absolute;
-  height: 70px;
-  width: 25px;
-  border: 2px solid;
-  border-radius: 5px;
-  z-index: -1;
-  margin: 220px 85px;
-  transform: rotate(30deg);
-  background-color: #caccce;
-  box-shadow: 0 0 10px 1px #000;
-}
-.main .stand-right{
-  position: absolute;
-  height: 70px;
-  width: 25px;
-  border: 2px solid;
-  border-radius: 5px;
-  z-index: -10;
-  margin: 220px 195px;
-  transform: rotate(-30deg);
-  background-color: #caccce;
-  box-shadow: 0 0 10px 1px #000;
-}
-.main .stand{
-  position: absolute;
-  height: 220px;
-  width: 20px;
-  border: 2px solid;
-  border-radius: 5px;
-  z-index: 0;
-  margin: 178px 143px;
-  transform: rotateZ(90deg);
-  background-color: #caccce;
-  box-shadow: 3px 0px 10px 1px #000;
-}
-.main .text{
-  position: absolute;
-  margin: 180px 98px;
-  word-spacing: 2px;
-  z-index: 1;
-  opacity: .8;
-  font-size: 14px;
-  text-align: center;
+.main .right-hand {
+    position: absolute;
+    height: 66px;
+    width: 27px;
+    border: 1px solid;
+    border-radius: 5px;
+    z-index: -2;
+    margin: 104px 171px;
+    transform: rotate(-30deg);
+    background-color: #caccce;
+    box-shadow: 0 0 10px 1px #f00;
 }
 
-.number, .text{
-  font-weight: 700;
+.main .right-cap {
+    position: absolute;
+    height: 39px;
+    width: 102px;
+    border: 1px solid;
+    border-radius: 60px 60px 0 0;
+    z-index: -1;
+    margin: 75px 108px;
+    transform: rotate(-30deg);
+    background-color: #caccce;
+    box-shadow: 0 0 10px 1px #f00, inset 0 0 10px 5px #fff;
 }
 
-.tw{
-  margin: 5px 94px;
-  position: absolute;
-}
-.six{
-  margin: 175px 96px;
-  position: absolute;
-}
-.three{
-  margin: 90px 180px;
-  position: absolute;
-}
-.nine{
-  margin: 92px 10px;
-  position: absolute;
-}
-.point{
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  background: red;
-  position: absolute;
-  margin: 95px 97px;
-  z-index: 6;
-}
-.hour{
-  height: 50px;
-  width: 5px;
-  border-radius: 4px;
-  background: blue;
-  margin: 57px 100px;
-  position: absolute;
-  transform-origin: 50% 86%;
-  z-index: 2;
-}
-.minute{
-  height: 60px;
-  width: 4px;
-  background: green;
-  border-radius: 3px;
-  margin: 48px 100px;
-  position: absolute;
-  transform-origin: 50% 86%;
-  z-index: 3;
+.main .stand-left {
+    position: absolute;
+    height: 100px;
+    width: 44px;
+    border: 1px solid;
+    border-radius: 5px;
+    z-index: -1;
+    margin: 383px 147px;
+    transform: rotate(30deg);
+    background-color: #caccce;
+    box-shadow: 0 0 10px 1px #f00;
 }
 
-.second{
-  height: 75px;
-  width: 3px;
-  background: red;
-  border-radius: 2px;
-  margin: 40px 101px;
-  position: absolute;
-  transform-origin: 50% 80%;
-  z-index: 4;
+.main .stand-right {
+    position: absolute;
+    height: 105px;
+    width: 44px;
+    border: 1px solid;
+    border-radius: 10px;
+    z-index: -10;
+    margin: 385px 336px;
+    transform: rotate(-30deg);
+    background-color: #caccce;
+    box-shadow: 0 0 10px 1px #f00;
 }
 
-.copyright{
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  background: white;
-  padding: 10px;
+.main .stand {
+    position: absolute;
+    height: 339px;
+    width: 43px;
+    border: 1px solid;
+    border-radius: 0 200px 200px 0;
+    z-index: 0;
+    margin: 318px 242px;
+    transform: rotateZ(90deg);
+    background-color: #caccce;
+    box-shadow: 3px 0px 10px 1px #f00;
+}
+
+.main .text {
+    position: absolute;
+    margin: 337px 192px;
+    word-spacing: 2px;
+    width: 150px;
+    z-index: 1;
+    opacity: .8;
+    font-size: 25px;
+    text-align: center;
+}
+
+.number,
+.text {
+    font-weight: 1000;
+    font-size: 25px;
+}
+
+.one {
+    margin: 25px 210px;
+    position: absolute;
+}
+
+.two {
+    margin: 70px 260px;
+    position: absolute;
+}
+
+.three {
+    margin: 140px 280px;
+    position: absolute;
+}
+
+.four {
+    margin: 205px 257px;
+    position: absolute;
+}
+
+.five {
+    margin: 250px 208px;
+    position: absolute;
+}
+
+.six {
+    margin: 270px 146px;
+    position: absolute;
+}
+
+.sev {
+    margin: 251px 79px;
+    position: absolute;
+}
+
+.eig {
+    margin: 209px 35px;
+    position: absolute;
+}
+
+.nine {
+    margin: 140px 8px;
+    position: absolute;
+}
+
+.ten {
+    margin: 79px 28px;
+    position: absolute;
+}
+
+.ele {
+    margin: 28px 70px;
+    position: absolute;
+}
+
+.tw {
+    margin: 5px 134px;
+    position: absolute;
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: red;
+    position: absolute;
+    margin: 140px 137px;
+    z-index: 6;
+}
+
+.hour {
+    height: 90px;
+    width: 10px;
+    border-radius: 5px;
+    background: blue;
+    margin: 79px 142px;
+    position: absolute;
+    transform-origin: 50% 80%;
+    z-index: 2;
+}
+
+.minute {
+    height: 110px;
+    width: 8px;
+    background: green;
+    border-radius: 4px;
+    margin: 63px 143px;
+    position: absolute;
+    transform-origin: 50% 80%;
+    z-index: 3;
+}
+
+.second {
+    height: 120px;
+    width: 4px;
+    background: red;
+    border-radius: 3px;
+    margin: 55px 145px;
+    position: absolute;
+    transform-origin: 50% 80%;
+    z-index: 4;
+}
+
+.copyright {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background: white;
+    padding: 10px;
 }
