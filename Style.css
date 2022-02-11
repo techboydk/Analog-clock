@@ -46,10 +46,36 @@ body {
     width: 300px;
     height: 300px;
     background-color: #fff;
-    box-shadow: inset 0 0 20px 10px #1c1c1cab, 0px 1px 10px 2px #ff0000e6;
+    box-shadow: inset 0 0 20px 100px #eaff067a, 0px 1px 10px 2px #ff0000e6;
     border-radius: 150px;
     position: absolute;
     margin: 115px;
+}
+
+.main .left-point {
+    position: absolute;
+    height: 8px;
+    width: 13px;
+    border: 1px solid;
+    border-radius: 4px;
+    z-index: -1;
+    margin: 70px 378px;
+    transform: rotate(30deg);
+    background-color: #caccce;
+    box-shadow: 0 0 10px 1px #ff0000, inset 0 0 5px #f8f2f2;
+}
+
+.main .right-point {
+    position: absolute;
+    height: 8px;
+    width: 13px;
+    border: 1px solid;
+    border-radius: 4px;
+    z-index: -1;
+    margin: 69px 143px;
+    transform: rotate(-30deg);
+    background-color: #caccce;
+    box-shadow: 0 0 10px 1px #ff0000, inset 0 0 5px #f8f2f2;
 }
 
 .main .left-cap {
@@ -132,13 +158,12 @@ body {
 
 .main .stand {
     position: absolute;
-    height: 339px;
-    width: 43px;
+    height: 52px;
+    width: 339px;
     border: 1px solid;
-    border-radius: 0 200px 200px 0;
+    border-radius: 0 0 200px 200px;
     z-index: 0;
-    margin: 318px 242px;
-    transform: rotateZ(90deg);
+    margin: 465px 90px;
     background-color: #caccce;
     box-shadow: 3px 0px 10px 1px #f00;
 }
@@ -261,6 +286,35 @@ body {
     position: absolute;
     transform-origin: 50% 80%;
     z-index: 4;
+}
+
+#time {
+    text-align: center;
+    margin: 0 0 10px 83px;
+    padding-top: 4px;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    background-color: #6211b65e;
+    box-sizing: border-box;
+    width: 130px;
+    height: 31px;
+    border-right: none;
+    box-shadow: inset 8px 0 10px rgb(63, 63, 63);
+}
+
+#ampm {
+    margin: 0 0 10px 213px;
+    padding-top: 4px;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    background-color: #6211b65e;
+    box-sizing: border-box;
+    border-left: none;
+    width: 48px;
+    height: 31px;
+    box-shadow: inset -8px 0 10px rgb(63, 63, 63);
 }
 
 .copyright {
