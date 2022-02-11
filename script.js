@@ -20,10 +20,8 @@ function timeshow(a, b, c) {
         if (a < 10) {
             a = "0" + a;
         }
-        var time = a + " : " + b + " : " + c;
+        time = a + " : " + b + " : " + c;
     }
-
-
     time = time.bold();
     Ampm = Ampm.bold();
     document.getElementById('time').innerHTML = time;
